@@ -10,7 +10,7 @@ def suma_fibonacci_pares
         a = b
         b = c
     end
-    puts "La suma de los números pares de la serie de fibonacci hasta 4000000 es: #{suma_pares}"
+    puts "La suma de los números pares de la sucesión de fibonacci hasta 4000000 es: #{suma_pares}"
 end
 
 suma_fibonacci_pares
