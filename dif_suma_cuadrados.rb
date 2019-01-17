@@ -1,14 +1,24 @@
-def dif_suma_cuadrados
-    suma_uno = 0
-    suma_dos = 0
-    resultado = 0
+def suma_cuadrados
+    suma = 0
     1.upto(100) do |i|
-        suma_uno += i ** 2
-        suma_dos += i
+        suma += i ** 2
     end
-    suma_dos = suma_dos ** 2
+    suma
+end
+
+def cuadrado_de_suma
+    suma = 0
+    1.upto(100) do |i|
+        suma += i
+    end
+    suma ** 2
+end
+
+def dif_sumas
+    suma_uno = suma_cuadrados
+    suma_dos = cuadrado_de_suma
     resultado = suma_dos - suma_uno
     puts "#{suma_dos} - #{suma_uno} = #{resultado}"
 end
 
-dif_suma_cuadrados
+dif_sumas
