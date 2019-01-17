@@ -1,16 +1,22 @@
-def suma_fibonacci_pares
+def fibonacci(limite)
     a = 1
     b = 1
-    suma_pares = 0
-    while b < 4000000
-        if b % 2 == 0
-            suma_pares += b
-        end
+    fib = [a]
+    while b < limite
+        fib << b
         c = a + b
         a = b
         b = c
     end
-    puts "La suma de los números pares de la sucesión de fibonacci hasta 4000000 es: #{suma_pares}"
+    fib
 end
 
-suma_fibonacci_pares
+def suma_fibonacci_pares
+    fib = fibonacci(4000000)
+    pares = fib.select {|f| f % 2 == 0}
+    pares.sum
+end
+
+puts "La suma de los números pares de la sucesión de fibonacci hasta 4000000 es: #{suma_fibonacci_pares}"
+
+puts suma_fibonacci_pares == 4613732
