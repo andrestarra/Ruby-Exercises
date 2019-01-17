@@ -1,24 +1,14 @@
 def suma_cuadrados
-    suma = 0
-    1.upto(100) do |i|
-        suma += i ** 2
-    end
-    suma
+    (1..100).inject {|sum, n| sum + (n ** 2) }
 end
 
 def cuadrado_de_suma
-    suma = 0
-    1.upto(100) do |i|
-        suma += i
-    end
+    suma = (1..100).reduce(:+)
     suma ** 2
 end
 
 def dif_sumas
-    suma_uno = suma_cuadrados
-    suma_dos = cuadrado_de_suma
-    resultado = suma_dos - suma_uno
-    puts "#{suma_dos} - #{suma_uno} = #{resultado}"
+    cuadrado_de_suma - suma_cuadrados
 end
 
-dif_sumas
+puts "#{suma_cuadrados} - #{cuadrado_de_suma} = #{dif_sumas}"
