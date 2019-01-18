@@ -4,9 +4,7 @@ def primo_2
   arr = []
   primo , i = 1 , 1
   until arr.length == 10001
-    if Prime.prime?(i)
-      arr << i
-    end
+    arr << i if Prime.prime?(i)
     i += 1
   end
   arr.last
