@@ -2,11 +2,10 @@ print "Ingresa una palabra: "
 palabra = gets.chomp
 
 def es_palindromo?(palabra)
-	if palabra == palabra.reverse then return true else return false end
+	palabra == palabra.reverse
 end
 
-str = "La palabra #{palabra}"
-if es_palindromo?(palabra) then puts "#{str} es palindromo" else puts "#{str} NO es palindromo" end
+puts "La palabra #{palabra} #{'NO ' unless es_palindromo?(palabra)}es palindroma"
 
 puts es_palindromo?("abalaba")==true
 puts es_palindromo?("ana")==true
