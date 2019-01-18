@@ -1,6 +1,5 @@
 def fibonacci(limite)
-    a = 1
-    b = 1
+    a , b , c = 1 , 1 , 0 
     fib = [a]
     while b < limite
         fib << b
