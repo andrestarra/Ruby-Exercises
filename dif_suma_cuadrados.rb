@@ -10,5 +10,3 @@ end
 def dif_sumas
   cuadrado_de_suma - suma_cuadrados
 end
-
-puts "#{ suma_cuadrados } - #{ cuadrado_de_suma } = #{ dif_sumas }"

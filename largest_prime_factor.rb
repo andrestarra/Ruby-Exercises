@@ -15,5 +15,3 @@ def largest_prime_factor(x)
   end
   primos.max
 end
-
-puts "El mayor factor primo de 600851475143 es #{largest_prime_factor(600851475143)}"

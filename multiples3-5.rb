@@ -21,5 +21,3 @@ def multiplos_3_5
   end
   suma
 end
-
-puts "La suma total de los números múltiplos de 3 y 5 de 1 hasta 1000 es igual a: #{multiplos_3_5}"
