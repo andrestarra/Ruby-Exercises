@@ -1,9 +1,10 @@
 require "minitest/autorun"
-require "../../even-fibonacci.rb"
+require "./even-fibonacci.rb"
 
-class TestDifSumaCuadrados < Minitest::Test
+class TestEvenFibonacci < Minitest::Test
   def test_fibonacci_1
-    assert_equal 5, fibonacci(8).last
+    array = [1, 1, 2, 3, 5]
+    assert_equal array, fibonacci(8)
   end
 
   def test_fibonacci_2
@@ -18,4 +19,7 @@ class TestDifSumaCuadrados < Minitest::Test
     assert_equal 4613732, suma_fibonacci_pares
   end
 
+  def test_even_fibonacci_2
+    refute_equal !46313732, suma_fibonacci_pares
+  end
 end

@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require "../../dif_suma_cuadrados"
+require "./dif_suma_cuadrados"
 
 class TestDifSumaCuadrados < Minitest::Test
   def test_suma_cuadrados

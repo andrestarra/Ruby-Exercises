@@ -1,7 +1,7 @@
 require "minitest/autorun"
-require "../../largest_prime_factor.rb"
+require "./largest_prime_factor.rb"
 
-class TestFactorial < Minitest::Test
+class TestLargestPrimeFactor < Minitest::Test
   def test_largest_prime_factor
     assert_equal 11, largest_prime_factor(3960)
   end

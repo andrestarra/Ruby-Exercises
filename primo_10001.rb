@@ -17,7 +17,3 @@ end
 puts "Primo #10001: #{primo_2}" 
 
 puts "El número primo #10001 es #{primo_10001}"
-
-puts primo_2 == 104743
-
-puts primo_10001 == 104743

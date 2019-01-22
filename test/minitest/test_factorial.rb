@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require "../../factorial.rb"
+require "./factorial.rb"
 
 class TestFactorial < Minitest::Test
 	def test_factorial_1

@@ -17,5 +17,3 @@ def suma_fibonacci_pares
 end
 
 puts "La suma de los números pares de la sucesión de fibonacci hasta 4000000 es: #{suma_fibonacci_pares}"
-
-puts suma_fibonacci_pares == 4613732

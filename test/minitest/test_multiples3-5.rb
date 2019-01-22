@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require '../../multiples3-5.rb'
+require './multiples3-5.rb'
 
 class TestUno < Minitest::Test
   def test_multiplo_3
