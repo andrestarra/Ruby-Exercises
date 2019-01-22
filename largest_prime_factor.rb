@@ -1,4 +1,4 @@
-def largest_prime_factor (x)
+def largest_prime_factor(x)
   primos = []
   aux = x
   until aux == 1

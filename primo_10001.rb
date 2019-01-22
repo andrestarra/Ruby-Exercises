@@ -2,7 +2,7 @@ require "prime"
 
 def primo_2
   arr = []
-  primo , i = 1 , 1
+  i = 1
   until arr.length == 10001
     arr << i if Prime.prime?(i)
     i += 1
