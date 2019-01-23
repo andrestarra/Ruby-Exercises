@@ -1,7 +1,7 @@
 require "minitest/autorun"
 require "./primo_10001.rb"
 
-class TestLargestPrimeFactor < Minitest::Test
+class TestPrime_10001 < Minitest::Test
   def test_primo_2
     assert_equal 104743, primo_2
   end

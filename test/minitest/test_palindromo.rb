@@ -1,7 +1,7 @@
 require "minitest/autorun"
 require "./palindromo.rb"
 
-class TestLargestPrimeFactor < Minitest::Test
+class TestPalindromes < Minitest::Test
   def test_palindromo
     assert_equal true, es_palindromo?("abalaba")
   end
