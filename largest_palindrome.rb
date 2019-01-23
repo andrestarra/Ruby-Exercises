@@ -10,7 +10,3 @@ def largest_palindrome
   end
   resultado
 end
-
-puts "Mayor número palindromo resultado de un producto de dos números de tres digitos es #{largest_palindrome}"
-
-puts largest_palindrome==906609

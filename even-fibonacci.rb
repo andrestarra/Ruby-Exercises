@@ -15,7 +15,3 @@ def suma_fibonacci_pares
     pares = fib.select {|f| f % 2 == 0}
     pares.sum
 end
-
-puts "La suma de los números pares de la sucesión de fibonacci hasta 4000000 es: #{suma_fibonacci_pares}"
-
-puts suma_fibonacci_pares == 4613732
