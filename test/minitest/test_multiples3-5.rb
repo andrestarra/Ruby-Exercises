@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require './multiples3-5.rb'
 
-class TestUno < Minitest::Test
+class TestMultiples35 < Minitest::Test
   def test_multiplo_3
     assert_equal true, es_multiplo_3?(6)
   end
