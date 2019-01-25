@@ -8,7 +8,7 @@ module RepeatingRegexes
   #   * azzzzzzzzzza
   #   * aa
   def regex_matching_any_number_of_zs
-    /az*a/
+    /\Aaz*a\z/
   end
 
   # Returns a regex that matches a string that has "z" in it at least once.
@@ -29,7 +29,7 @@ module RepeatingRegexes
   #   * aza
   #   * aa
   def regex_matching_z_at_most_once
-    /(az?a)+/
+    /\A(az?a)+\z/
   end
 
   # Returns a regex that matches a string that has "a", then exactly ten "z"s,
@@ -38,7 +38,7 @@ module RepeatingRegexes
   # It should match "azzzzzzzzzza", but nothing else. Don't write out the z's
   # yourself! There's an easier way.
   def regex_with_exactly_ten_zs
-    /az{10}a/
+    /\Aaz{10}a\z/
   end
 
   # Returns a regex that matches a string that has "a", then two or more "z"s,
@@ -53,7 +53,7 @@ module RepeatingRegexes
   #    * aza
   #    * bzzzzz
   def regex_with_two_or_more_zs
-    /az{2,}a/
+    /\Aaz{2,}a\z/
   end
 
   # Returns a regex that matches a string that has "a", then ten to twelve "z"s,
